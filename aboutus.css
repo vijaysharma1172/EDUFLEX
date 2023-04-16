@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 30px;
 }
 body{
     background: #81c644;
@@ -50,5 +51,5 @@ body{
     color: #1e12cf;
     font-size: 12px;
     text-transform:uppercase ;
-    margin:12px 0px;
+    margin:12px 0px;
 }
