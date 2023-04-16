@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 34px;
+    padding: 8px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header_nav-logo{
+    width: 130px;
+}
+.header_nav-items{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.header_nav-item{
+    color:black;
+    font-family: cursive;
+    font-size: 20px;
+}
+/* .header_nav-item a:hover{
+    color:#008000;
+    
+} */
+/* Main */
+.main_text{
+    width: 500px;
+}
+.hero{
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_img img{
+    width: 400px;
+}
+.main_text-heading{
+    font-size: 30px;
+    color: rgb(216, 216, 226);
+}
+.tabs img{
+    width:100px;
+}
+h3{
+    margin-left: 30px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: salmon;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.tabs_cards h3{
+     color: gray;
+     font-weight: 500px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+     margin-top: 7px;
+ }
+ .footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+     
+ }
+ .footer_text{
+    text-align: center;
+ }
+ .tabs_cards h3:hover{
+    color: black;
+
+ }
+.header{
+    background-image: linear-gradient(109.6deg, rgb(84, 13, 110) 11.2%, rgb(238, 66, 102) 100.2%);
+}
+/* .hero{
+    background-image: linear-gradient(243.3deg, rgb(247, 164, 216) 35.7%, rgb(115, 102, 252) 121.6%);
+} */
+.tabs{
+    background: linear-gradient(100.5deg, rgb(148, 146, 236) 17.7%, rgb(245, 194, 194) 76.1%);
+}
+body{
+    background-image:url(https://static.vecteezy.com/system/resources/previews/000/668/806/original/purple-gradient-background.jpg);
+}
+.tabs{
+    border:3px solid purple;
+}
+.tabs{
+    border-radius: 30px;
+}
+.container{
+    border-radius: 20px;
+}
+.header_nav img{
+    border-radius: 75px;
+}
+.tabs_cards img{
+    border-radius: 50px;
+
+}

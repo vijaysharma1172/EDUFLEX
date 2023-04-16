@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes</title>
+        <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-image: url('images2.avif');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        header{
+            position:relative;
+            left:10px;
+            background-color:black 30%;
+            width:100vw;
+            height:vh;
+            margin:0px;
+            padding: 0px;
+           
+            /* border: 2px solid rgb(99, 4, 99); */
+            
+        }
+        nav{
+            display:inline;
+            color:white;
+            background-color: grey;
+            margin:1px;
+            position:relative;
+            left:320px
+            
+        }
+        
+        li{
+            border-radius: 9px;
+            list-style: none;
+            display: inline;
+            margin:29px;
+            width:16vw;
+            padding:11px 19px;
+            font-family: 'Times New Roman', Times, serif;
+            border:3px solid purple;
+            background-color: rgb(131, 64, 131);
+            font-size: 22px;
+        }
+        .cs link
+        {
+            color:white;
+            text-decoration: none;
+        }
+        a:active
+        {
+            color:white;
+        }
+        a:visited
+        {
+            color:white;
+        }
+       
+        .button
+        {
+            border-radius: 9px;
+            cursor:pointer;
+            color:white;
+            display: inline;
+            margin:29px;
+            /* width:16vw; */
+            padding:11px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            border:none;
+            background-color: rgb(131, 64, 131);
+        }
+
+        .dropdown
+        {
+            position:relative;
+            display:inline-block;
+        }
+        
+        .notescontent
+        {
+            display:none;
+            color:white;
+            position:absolute;
+            background-color:darkkhaki;
+            min-width: 160px;
+            box-shadow: 8px 16 px 0 px rgba(0,0,0,0.2);
+            z-index:1;
+        }
+        
+        .notescontent a{
+                color:black;
+                padding:12px 16px;
+                display: block;
+        }
+
+        .notescontent a:hover{
+            background-color:blueviolet;
+        }        
+        .dropdown:hover .notescontent{
+            display:block;
+        }
+        .dropdown:hover .button{
+            background-color:blueviolet;
+        }
+
+
+
+        .container
+        {
+            display: flex;
+            width: 90vw;
+            height:40vh;
+        }
+
+        .cs{
+            display: flex;
+            font-weight: bold;
+            flex-direction: column;
+            font-size: 4vh;
+            font-family: 'Times New Roman', Times, serif;
+            margin:30px;
+            padding:10px;
+            border: 3px solid purple;
+            border-radius:4px;
+            width:124vw;
+            height:78vh;
+            text-align: center;
+            background-image: linear-gradient(rgb(137, 45, 137) , rgb(208, 168, 208) );
+            border-radius: 23px;
+            opacity:.8;
+            box-shadow: 2px 3px 4px 5px;
+            font:dark grey;
+        }
+        .csgrid 
+        {
+            font-weight:lighter;
+            text-align: left;
+            padding:9px;
+            margin: 4px;
+            font-size: 29px;
+        }
+        .cs a:hover{
+            background-color:purple;
+        }
+        .ec{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: 4vh;
+            font-family: 'Times New Roman', Times, serif;
+            margin:30px;
+            padding:10px;
+            border: 3px solid purple;
+            border-radius:4px;
+            width:124vw;
+            height:78vh;
+            text-align: center;
+            background-image: linear-gradient(rgb(137, 45, 137) , rgb(208, 168, 208) );
+            border-radius: 33px;
+            opacity: .8;
+            color:black;
+            box-shadow: 2px 3px 4px 5px;
+            font:dark grey;
+            
+        }
+        .ec a:hover{
+            background-color:purple;
+        }
+        .ecgrid
+        {
+            font-weight: lighter;
+            text-align: left;
+            padding:9px;
+            margin: 4px;
+            font-size: 29px;
+        }
+        .ee{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: 4vh;
+            font-family: 'Times New Roman', Times, serif;
+            margin:30px;
+            padding:10px;
+            border: 3px solid purple;
+            border-radius:4px;
+            width:124vw;
+            height:78vh;
+            text-align: center;
+            background-image: linear-gradient(rgb(137, 45, 137) , rgb(208, 168, 208) );
+            border-radius: 23px;
+            opacity:.8;
+            box-shadow: 2px 3px 4px 5px;
+            font:dark grey;
+            
+        }
+        .ee a:hover{
+            background-color:purple;
+        }
+        
+        .eegrid
+        {
+            font-weight: lighter;
+            text-align: left;
+            padding:9px;
+            margin: 4px;
+            font-size: 29px;
+        }
+        .ce{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-size: 4vh;
+            font-family: 'Times New Roman', Times, serif;
+            margin:30px;
+            padding:10px;
+            border: 3px solid purple;
+            border-radius:4px;
+            width:124vw;
+            height:78vh;
+            text-align: center;
+            background-image: linear-gradient(rgb(137, 45, 137) , rgb(208, 168, 208) );
+            border-radius: 23px;
+            opacity:.8;
+            box-shadow: 2px 3px 4px 5px;
+            
+            font:dark grey;
+            
+        }
+        .ce a:hover{
+            background-color:purple;
+        }
+        
+        .cegrid
+        {
+            font-weight: lighter;
+            text-align: left;
+            padding:9px;
+            margin: 4px;
+            font-size: 29px;
+        }
+        .underline
+        {
+            text-decoration:none;
+        }
+        footer{
+            background:purple;
+            color:white;
+            width:100vw;
+            position:relative;
+            top: 380px;
+            text-align: center;        }
+
+        img{
+            width:120px;
+            height:12vh;
+            position:relative;
+            right:920px;
+            top:21px;
+            width:6vw;
+            border-radius: 235px;
+            box-shadow:1px 0.1px 0.3px 0.9px;
+        }
+        button1:hover
+        {
+            background-color:black;
+            width: 2px;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+           <a href="" class="underline"><li>Home</li></a>
+
+           <a href="" class="underline"><li>About</li></a>
+            <div class="dropdown">
+            
+            <button class="button">Notes</button>
+            
+            <div class="notescontent">
+                <a href="#">Year</a>
+                <div class="yearcontent">
+                    <a href="#">1st</a>
+                    <div class="firstcontent">
+                        <a href="#"> Branch</a>
+                    </div>
+                    <a href="#">2nd</a>
+                    <div class="secondcontent">
+                        <a href="#"> Branch</a>
+                    </div>
+                    <a href="#">3rd</a>
+                    <div class="thirdcontent">
+                        <a href="#"> Branch</a>
+                    </div>
+                    <a href="#">4th</a>
+                    <div class="fourth content">
+                        <a href="#"> Branch</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="underline"><li>PYQs</li></a>
+            <img src="img.avif" alt="">
+            </div>
+        </div>
+        </ul>
+    </nav>  
+</header>
+
+
+
+<div class="container">
+
+    <div class="cs">
+            CSE
+       <a href="https://drive.google.com/drive/u/1/my-drive" target="_target" class="underline"> <div class="csgrid">
+        Programming In C
+        </div></a>
+       
+       <a href="#" class="underline"> <div class="csgrid">
+        Information Technology
+        </div></a>
+       
+       <a href="#" class="underline"> <div class="csgrid">
+        Engineering Mathematics
+        </div></a>
+       
+       <a href="#" class="underline"> <div class="csgrid">
+        Engineering Chemistry
+        </div></a>
+       
+       <a href="#" class="underline"> <div class="csgrid">
+        Digital Design
+        </div></a>
+       
+    </div>
+
+    <div class="ec" class="underline">
+        ECE
+        <a href="#" class="underline"> <div class="ecgrid">
+        Elements Of Electronics
+        </div></a>
+    
+    <a href="#" class="underline"> <div class="ecgrid">
+        Electronics Workshop
+    </div></a>
+    <a href="#" class="underline"> <div class="ecgrid">
+        Engineering Mathematics
+    </div></a>
+    <a href="#" class="underline"> <div class="ecgrid">
+        Engineering Chemistry
+    </div></a>
+    <a href="#" class="underline"> <div class="ecgrid">
+        Introduction To Computing
+    </div></a>
+    </div>
+
+    <div class="ee">
+        EE
+        <a href="#" class="underline"> <div class="eegrid">
+            Elements Of Electrical Engineering
+            </div></a>
+            
+        <a href="#" class="underline"> <div class="eegrid">
+            Communicative English
+            </div></a>
+            
+        <a href="#" class="underline"> <div class="eegrid">
+            Introduction To Computing
+            </div></a>
+            
+        <a href="#" class="underline"> <div class="eegrid">
+            Introduction To Electronics Engineering
+        </div></a>
+            
+        <a href="#" class="underline"> <div class="eegrid">
+            Engineering Physics
+            </div></a>
+            
+        </div>
+        <div class="ce">
+            CE
+            <a href="#" class="underline"> <div class="eegrid">
+                Engineering Physics
+                </div></a>
+            <a href="#" class="underline"> <div class="eegrid">
+                Communicative English
+                </div></a>
+            <a href="#" class="underline"> <div class="eegrid">
+                Information Technology Fundamentals
+                </div></a>
+            <a href="#" class="underline"> <div class="eegrid">
+                Engineering Mechanics
+                </div></a>
+            <a href="#" class="underline"> <div class="eegrid">
+                CAD Drawing
+                </div></a>
+        </div>
+</div>
+<footer>
+    copyright &copy EduFlex
+</footer>
+</body>
+</html>

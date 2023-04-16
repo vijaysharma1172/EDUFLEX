@@ -1,0 +1,153 @@
+body{
+    background-image: url(assets/kimberly-farmer-lUaaKCUANVI-unsplash.jpg);
+   background-size:cover;
+}
+.container{
+    margin: 30px;
+    padding: 8px;
+}
+.header_nav_pyq{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header_nav-logo{
+    width: 130px;
+}
+.header_nav-items_pyq{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.header_nav-item_pyq{
+    color:black;
+    font-family: cursive;
+    font-size: 20px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    top:600px;
+     
+ }
+ .footer_text{
+    text-align: center;
+ }
+ .header_nav-logo{
+    border-radius:75px;
+ }
+ .first_sec{
+    font-size: 34px;
+    text-align:right;
+    /* margin: 0px 200px; */
+    /* border: 5px solid peru;
+    border-radius: 40px; */
+    display:inline-block;
+ }
+ .first_sec{
+    margin-left:600px;
+    text-decoration:solid;
+    font-family:cursive;
+
+ }
+ .Menu{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    justify-content:space-around;
+    font-size: 30px;
+    font-weight:300px;
+    border: 3px solid rgb(26, 24, 175);
+    border-radius: 40px;
+    gap: 20px;
+}
+a:visited{
+    color:black;
+}
+.Menu{
+    position: relative;
+    display:flex;
+}
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #473f3f;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index:1;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top:0px;
+  }
+  .CS:hover .dropdown-content {
+    display: block;
+  }
+  .ECE:hover .dropdown-content {
+    display: block;
+  }
+  .Electrical:hover .dropdown-content {
+    display: block;
+  }
+  .Civil:hover .vijay {
+    display: block;
+  }
+  .Electrical{
+    display: block;
+  }
+  .vijay{
+    display: none;
+    position:absolute;
+    right: 4px;
+    background-color: #473f3f;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index:1;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top:0px;
+    top: 35px;
+  }
+  .Menu{
+    background: linear-gradient(100.5deg, rgb(148, 146, 236) 17.7%, rgb(245, 194, 194) 76.1%);
+  }
+  #CS ,#ECE,#Electrical,#Civil{
+    text-decoration: none;
+  }
+  .Menu{
+    box-shadow:3px;
+  }
+  .a{
+    text-decoration: none;
+  }
+  .dropdown-content{
+    box-shadow: 100px;
+  }
+  .a:hover{
+    background-color:blue;
+  }
+  .quote{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 38px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: right;
+    text-align: right;
+    margin-top:200px;
+    margin-left: 550px;
+
+  }
+  .quote{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 30px;
+    padding: 30px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+    

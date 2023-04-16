@@ -1,0 +1,113 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 0 34px;
+    padding: 8px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header_nav-logo{
+    width: 130px;
+}
+.header_nav-items{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.header_nav-item{
+    color: rgb(165, 42, 42);
+    font-family: cursive;
+    font-size: 20px;
+    background-image: linear-gradient(powderblue, red 20%);
+}
+.header_nav-item a:hover{
+    color:#008000;
+    
+}
+/* Main */
+.main_text{
+    width: 700px;
+}
+.hero{
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:cornsilk;
+}
+.main_img img{
+    width: 400px;
+}
+.main_text-heading{
+    font-size: 30px;
+    color: rgb(55, 43, 226);
+    margin:40px;
+    border:3px;
+}
+.tabs img{
+    width:100px;
+}
+h3{
+    margin-left: 30px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: salmon;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.tabs_cards h3{
+     color: gray;
+     font-weight: 500px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+     margin-top: 7px;
+ }
+ .footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+     
+ }
+ .footer_text{
+    text-align: center;
+ }
+ .tabs_cards h3:hover{
+    color: black;
+
+ }
+ body{
+    /* background-image: url('bgweb.jpg'); */
+    background-color :powderblue;
+    width:95vw;
+    height:95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ link{
+    color: white;
+ }
+ a:visited{
+    color:white;
+ }
+ a:active{
+    color:white;
+ }
+
+ link:hover
+ {
+    font-size:34px;
+}
